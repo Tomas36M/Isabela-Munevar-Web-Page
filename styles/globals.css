@@ -1,9 +1,20 @@
-html,
-body {
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  background: #C9D6FF;
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF);
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Baskervville', serif;
+}
+
+input{
+  margin-left: 15px;
+  height: 30px;
+  margin-top: 4px;
 }
 
 a {
@@ -11,6 +22,72 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.logo{
+  padding-left: 15px;
 }
+
+.accordion-button{
+  text-align: left;
+}
+
+.nav-items{
+  padding-right: 30px ;
+}
+
+.accordion{
+  margin: 10px;
+}
+
+.accordion-button{
+  background: #C9D6FF;
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+}
+
+.accordion-button:not(.collapsed) {
+  background: #C9D6FF;
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+  color: black;
+}
+
+.publication{
+  text-align: left;
+  padding-left: 15px;
+}
+
+.acordion-section{
+  padding: 10px;
+}
+
+.heading{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1199px) {
+  .media-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .img-container{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text{
+    width: 100%;
+  }
+}
+
